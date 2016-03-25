@@ -83,15 +83,16 @@ path        : undefined                                      // A global locate 
 precision   : false                                          // Enables the selection of a precision score.
 readOnly    : false                                          // Turns the rating read-only.
 round       : { down: .25, full: .6, up: .76 }               // Included values attributes to do the score round math.
-score       : undefined                                      // Initial rating.
+multiple    : 1                                              // 定义打分的倍数
+score       : undefined                                      // 初始分数
 scoreName   : 'score'                                        // Name of the hidden field that holds the score value.
 single      : false                                          // Enables just a single star selection.
-space       : true                                           // Puts space between the icons.
-starHalf    : 'star-half.png'                                // The name of the half star image.
-starOff     : 'star-off.png'                                 // Name of the star image off.
-starOn      : 'star-on.png'                                  // Name of the star image on.
+space       : true                                           // 图标之间插入一个空格作为间隔
+starHalf    : 'star-half.png'                                // 半颗星星的图片名
+starOff     : 'star-off.png'                                 // 未打分的星星图片名
+starOn      : 'star-on.png'                                  // 打分后的星星图片名
 target      : undefined                                      // Element selector where the score will be displayed.
-targetFormat: '{score}'                                      // Template to interpolate the score in.
+targetFormat: '{score}'                                      // 自定义输出模板
 targetKeep  : false                                          // If the last rating value will be keeped after mouseout.
 targetScore : undefined                                      // Element selector where the score will be filled, instead of creating a new hidden field (scoreName option).
 targetText  : ''                                             // Default text setted on target.
